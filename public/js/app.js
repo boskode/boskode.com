@@ -62628,7 +62628,7 @@ AOS.init({
   once: false
 });
 jQuery(document).ready(function ($) {
-  "use strict";
+  'use strict';
 
   var siteMenuClone = function siteMenuClone() {
     $('.js-clone-nav').each(function () {
@@ -62686,7 +62686,7 @@ jQuery(document).ready(function ($) {
     }); // click outisde offcanvas
 
     $(document).mouseup(function (e) {
-      var container = $(".site-mobile-menu");
+      var container = $('.site-mobile-menu');
 
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('offcanvas-menu')) {
@@ -62716,16 +62716,16 @@ jQuery(document).ready(function ($) {
 
 
   var siteSliderRange = function siteSliderRange() {
-    $("#slider-range").slider({
+    $('#slider-range').slider({
       range: true,
       min: 0,
       max: 500,
       values: [75, 300],
       slide: function slide(event, ui) {
-        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
       }
     });
-    $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+    $('#amount').val('$' + $('#slider-range').slider('values', 0) + ' - $' + $('#slider-range').slider('values', 1));
   }; // siteSliderRange();
 
 
@@ -62841,7 +62841,7 @@ jQuery(document).ready(function ($) {
   siteDatePicker();
 
   var siteSticky = function siteSticky() {
-    $(".js-sticky-header").sticky({
+    $('.js-sticky-header').sticky({
       topSpacing: 0
     });
   };
@@ -62850,7 +62850,7 @@ jQuery(document).ready(function ($) {
 
   var OnePageNavigation = function OnePageNavigation() {
     var navToggler = $('.site-menu-toggle');
-    $("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a[href^='#']", function (e) {
+    $('body').on('click', '.main-menu li a[href^=\'#\'], .smoothscroll[href^=\'#\'], .site-mobile-menu .site-nav-wrap li a[href^=\'#\']', function (e) {
       e.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
