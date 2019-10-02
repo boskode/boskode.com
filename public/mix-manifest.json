@@ -1,4 +1,7 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/admin.js": "/js/admin.js?id=33761d74aa8e9c3ac249",
+    "/js/app.js": "/js/app.js?id=e31e123c8c7f30a7c9f0",
+    "/css/app.css": "/css/app.css?id=ba2885c0a174a0a229d4",
+    "/css/admin.css": "/css/admin.css?id=55972315e7b86f585b78",
+    "/js/jquery.stellar.js": "/js/jquery.stellar.js?id=6bc994172518faace001"
 }

@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +12,11 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+    .js('resources/js/admin.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/admin.scss', 'public/css')
+    .copy('node_modules/jquery.stellar/jquery.stellar.js', 'public/js')
+    .copyDirectory('resources/sass/noxen/images', 'public/images')
+    .version()
+    .browserSync(process.env.APP_URL)
+    .disableNotifications()

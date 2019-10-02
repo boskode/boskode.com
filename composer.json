@@ -4,7 +4,8 @@
     "description": "An example laravel web by orang malas.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "boskode"
     ],
     "license": "MIT",
     "require": {

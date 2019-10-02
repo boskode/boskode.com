@@ -8,6 +8,18 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+require('jquery-migrate');
+require('owl.carousel');
+require('jquery-sticky');
+require('jquery-waypoints/waypoints.min');
+require('jquery.animate-number');
+require('@fancyapps/fancybox');
+require('jquery.easing');
+require('bootstrap-datepicker');
+window.AOS = require('./noxen/aos');
+require('./noxen/main');
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

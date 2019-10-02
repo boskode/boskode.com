@@ -1,8 +1,20 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Noxen
+$font-family-sans-serif: 'DM Sans', sans-serif;
+$owl-image-path: '../img/';
 
 // Variables
-@import 'variables';
+@import "~bootstrap/scss/functions";
+@import 'noxen/variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import 'noxen/fonts/icomoon/style.css';
+@import '~bootstrap-datepicker/dist/css/bootstrap-datepicker.css';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+@import '~owl.carousel/src/scss/owl.carousel';
+@import '~owl.carousel/src/scss/owl.theme.default';
+@import 'noxen/fonts/flaticon/font/flaticon';
+@import 'noxen/aos.css';
+
+@import 'noxen/style';
